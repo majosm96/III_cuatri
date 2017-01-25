@@ -1,0 +1,32 @@
+
+@mixin home-btn ($color, $bg-color, $shape ){
+
+	@if $shape == "square" {
+		width: 100px;
+		height: 100px;
+	}@else if $shape == "circle" {
+		width: 100px;
+		height: 100px;
+		background: red;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
+	}@else if $shape == "triangle" {
+		width: 0;
+		height: 0;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		border-top: 100px solid $color;
+	}
+
+    color: $color;
+    border-radius: $shape;
+    background-color: $bg-color;
+    margin: 23px 23px 23px 0px;
+    padding: 9px 25px 9px 25px;
+
+    &:hover {
+    	background-color: $color;
+    	color: $bg-color; 	
+    }
+}

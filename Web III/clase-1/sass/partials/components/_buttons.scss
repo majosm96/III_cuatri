@@ -1,0 +1,24 @@
+// ButtonS
+@import "partials/mixins/mixins";
+
+.btn-our {
+    font: $font-btn;
+    color:$millbrook;
+    border-radius: 10%;
+    background-color: $ebb;
+    box-sizing: content-box;
+    margin: 23px 23px 23px 0px;
+    padding: 9px 25px 9px 25px;
+}
+
+.btn-circle {
+	@include home-btn (#ff9900, #990000, square);
+}
+
+.btn-square {
+	@include home-btn (#ff6666, #666633, circle);
+}
+
+.btn-triangle {
+	@include home-btn (#33cccc, #ffcc00, triangle);
+}

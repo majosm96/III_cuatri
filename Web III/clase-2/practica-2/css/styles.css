@@ -1,0 +1,29 @@
+/**/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.chess {
+	width: 800px;
+	margin: 0 auto;
+	border: 2px solid black;
+	margin-top: 150px;
+	overflow: hidden;
+	background-color: #fff;
+
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	float: right;
+}
+
+.first:nth-child(2n+0) {
+	background-color: #000;
+}
+
+.second:nth-child(2n+1) {
+	background-color: #000;
+}
